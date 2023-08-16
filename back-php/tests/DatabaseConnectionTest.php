@@ -1,27 +1,24 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+    use PHPUnit\Framework\TestCase;
+    use Database\DatabaseConnection;
 
-class DatabaseConnectionTest extends TestCase {
+    class DatabaseConnectionTest extends TestCase {
 
-    public function test_databaseConnection() {
+        public function test_databaseConnection() {
 
-        //Setup
-        $dbConnection = new DatabaseConnection;
+            //Setup
+            $dbConnection = new DatabaseConnection;
 
+            //Action
+            $expected = 'Connected successfully.';
 
-        //Action
-        $dbConnection -> connect();
+            $result = $dbConnection -> connect();
 
-        $expected = [
-            
-        ];
+            //Assert
+            $this->assertEquals($expected, $result);
+        }
 
-        //Assert
-        $this->assertEquals($expected, $result);
     }
-
-
-}
 
 ?>
