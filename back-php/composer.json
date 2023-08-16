@@ -5,7 +5,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Herse\\BackPhp\\": "src/"
+            "Database\\":"app/database"
         }
     },
     "require": {}
