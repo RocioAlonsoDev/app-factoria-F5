@@ -2,6 +2,9 @@ import './App.css';
 import LandingPage from './views/LandingPage/LandingPage';
 
 function App() {
+
+
+
   return (
     <>
       <LandingPage></LandingPage>
@@ -9,5 +12,5 @@ function App() {
   )
 }
 
-export default App
 
+export default App;
