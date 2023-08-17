@@ -1,0 +1,38 @@
+.container{
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 100vh;
+}
+.social-menu{
+    width: 50px;
+    padding: 10px;
+}
+.social-menu img{
+    width: 100%;
+}
+.logo-container{
+    width: 55vw;
+    max-width: 500px;
+    margin: auto;
+    padding-top: 20px;
+}
+.logo-container img {
+    width: 100%;
+}
+.welcome-menu{
+    background-color: #080132;
+    width: 100%;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    border-radius: 15px 15px 0 0;
+    color: #D9D9D9;
+    text-align: center;
+}
+.welcome-menu-title{
+    font-size: 15pt;
+    padding-top: 50px;
+}
+.welcome-menu-subtitle{
+    font-size: 15pt;
+}
