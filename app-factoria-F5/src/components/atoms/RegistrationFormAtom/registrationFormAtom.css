@@ -1,0 +1,37 @@
+
+
+#registrationFormContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    max-width: 80%;
+    margin: auto;
+}
+
+#registrationFormGenderContainer {
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    gap: 5%;
+    align-content: center;
+}
+
+input,
+textarea,
+select {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%; 
+    max-width: 100%;
+    background-color: #D9D9D9;
+    color: #4D4D4D;
+    border-radius: 5px;
+    /* outline: none; */
+    border: none;
+}
+
+#registrationFormGenderContainer select{
+    width: auto;
+}
+

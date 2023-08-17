@@ -23,6 +23,7 @@ class ComposerStaticInit356f03f56c1a21b7a6715ae7b2720f21
         'D' => 
         array (
             'DeepCopy\\' => 9,
+            'Database\\' => 9,
         ),
     );
 
@@ -38,6 +39,10 @@ class ComposerStaticInit356f03f56c1a21b7a6715ae7b2720f21
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Database\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/database',
         ),
     );
 

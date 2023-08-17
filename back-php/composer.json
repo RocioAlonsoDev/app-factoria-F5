@@ -2,7 +2,9 @@
     "name": "usuario/back-php",
     "autoload": {
         "psr-4": {
-            "Usuario\\BackPhp\\": "src/"
+
+            "Database\\":"app/database"
+
         }
     },
     "require": {}
