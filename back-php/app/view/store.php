@@ -1,5 +1,5 @@
 <?php
-    require_once("c://xampp/htdocs/app-factoria-F5/back-php/app/controller/userController.php");
+    require_once("../controller/userController.php");
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         
         $LastName = isset($_POST['LastName']) ? htmlspecialchars($_POST['LastName']) : '';

@@ -5,7 +5,7 @@ class userModel{
     private $PDO;
 
     public function __construct(){
-        require_once("c://xampp/htdocs/app-factoria-F5/back-php/app/database/DatabaseConnection.php");
+        require_once("../database/DatabaseConnection.php");
         $conn = new DatabaseConnection();
         $this->PDO = $conn->connect();
         
