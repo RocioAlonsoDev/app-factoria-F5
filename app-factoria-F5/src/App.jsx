@@ -1,10 +1,10 @@
 import './App.css';
-import LandingPage from './views/LandingPage/LandingPage';
+import RegistrationFormPage from './views/RegistrationFormPage/RegistrationFormPage';
 
 function App() {
   return (
     <>
-      <LandingPage></LandingPage>
+      <RegistrationFormPage/>
     </>
   )
 }
