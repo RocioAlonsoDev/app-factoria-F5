@@ -16,8 +16,14 @@
 .orange {
     background-color: #FF4700;
 }
+.orange:hover{
+    background-color: #ff5e1f;
+}
 .white {
     background-color: #ffffff;
     color: #080132;
+}
+.white:hover {
+    background-color: #d1d1d1;
 }
   
