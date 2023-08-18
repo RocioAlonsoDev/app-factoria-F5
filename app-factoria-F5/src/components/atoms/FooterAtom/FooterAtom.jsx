@@ -17,7 +17,8 @@ const FooterAtom = () => {
                         <a href="https://factoriaf5.org/politica-de-privacidad/">Política de privacidad</a>
                         <p>|</p>
                         <a href="https://factoriaf5.org/politica-de-cookies/">Política de Cookies</a>
-                        
+                    </div>
+                    <div className="footerLinks">
                         <a href="https://factoriaf5.org/contacto/"> Contacta</a>
                         <p>|</p>
                         <a href="https://factoriaf5.org/somos/#transparencia">Transparencia</a>

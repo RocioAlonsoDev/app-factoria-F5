@@ -1,7 +1,9 @@
 .button-atom {
-    height: 30px;
-    width: 100px;
+    width: 250px;
+    height: 45px;
     padding: 10px 20px;
+    margin: auto;
+    margin-top: 20px;
     border: none;
     border-radius: 4px;
     color: white; text-align: center;
@@ -10,18 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 45px;
-    margin: auto;
-    margin-top: 20px;
-  }
-
-  .orange{
+}
+.orange {
     background-color: #FF4700;
-  }
-
-  .white{
+}
+.white {
     background-color: #ffffff;
     color: #080132;
-  }
+}
   
