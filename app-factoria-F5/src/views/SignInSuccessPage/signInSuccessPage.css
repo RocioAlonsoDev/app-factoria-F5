@@ -1,0 +1,30 @@
+.success-main{
+    background-color: #B1AFBA;
+}
+.success-title{
+    color: #080132;
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding:  30px 0;
+
+}
+.success-message-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.success-message-container img{
+    width: 100px;
+}
+.success-message-container p{
+    width: 200px;
+    background-color: #FFFFFF;
+    font-size: 10pt;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+    height: fit-content;
+}
