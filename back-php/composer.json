@@ -1,11 +1,10 @@
 {
-    "name": "herse/back-php",
-    "require-dev": {
-        "phpunit/phpunit": "^10.3"
-    },
+    "name": "usuario/back-php",
     "autoload": {
         "psr-4": {
-            "Herse\\BackPhp\\": "src/"
+
+            "Database\\":"app/database"
+
         }
     },
     "require": {}

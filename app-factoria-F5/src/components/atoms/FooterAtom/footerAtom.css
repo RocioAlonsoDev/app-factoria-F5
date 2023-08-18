@@ -1,0 +1,31 @@
+.footerText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #4D4D4D;
+    font-family: sans-serif;
+    font-size: 11px;
+    margin: 7%;
+    width: 86%;
+    gap: 8px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footerText a{
+    text-decoration: underline;
+    color: #4D4D4D;
+    font-family: sans-serif;
+}
+
+.paragrafFooter{
+    align-self: center;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    word-spacing: 5px;
+}
