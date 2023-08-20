@@ -1,4 +1,5 @@
 import "./footerAtom.css";
+import logo from '../../../assets/img/logo.png';
 
 
 const FooterAtom = () => {
@@ -8,7 +9,7 @@ const FooterAtom = () => {
   
         <div>
             <div className="footer">
-            
+                <img src={logo} alt="Logo" id="logo"/>
                 <div className="footerText">
                     <p className="paragrafFooter">Todos los derechos reservados 2021</p>
                     <div className="footerLinks">

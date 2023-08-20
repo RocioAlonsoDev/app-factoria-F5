@@ -9,6 +9,7 @@ import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
 import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
 
 
+
 function LandingPage() {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
