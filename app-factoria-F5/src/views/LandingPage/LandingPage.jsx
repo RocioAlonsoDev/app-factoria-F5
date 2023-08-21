@@ -24,6 +24,7 @@ function LandingPage() {
     
   return (
     <>
+
         <div className='container'>
             <div className='social-menu-icon' onClick={handleClick}>
                 <img src={menubars} alt="Menu desplegable."/>    

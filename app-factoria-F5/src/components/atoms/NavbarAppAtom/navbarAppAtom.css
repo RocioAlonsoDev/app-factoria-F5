@@ -1,0 +1,27 @@
+.navbarApp {
+    background-color: #080132;
+    color: white;
+    height: 30px;
+    position: fixed; 
+    top: 0; 
+    max-width: 100%; 
+    width: 100%;
+    padding: 10% 0%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarAppIcon{
+    width: 13%;
+    height: 120%;
+    padding: 0 10%;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 5% 15% 5% 5%;
+}

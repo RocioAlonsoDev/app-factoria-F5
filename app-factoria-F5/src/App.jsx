@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import './App.css'
-import ButtonAtom from './components/atoms/ButtonAtom/ButtonAtom'
-import NavbarAtom from './components/NavbarAtom/NavbarAtom'
+
+import './App.css';
+import NavbarAppAtom from './components/atoms/NavbarAppAtom/NavbarAppAtom'
  
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (<NavbarAtom></NavbarAtom>)
+  return (<NavbarAppAtom></NavbarAppAtom>)
 }
 export default App
