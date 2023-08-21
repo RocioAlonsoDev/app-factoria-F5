@@ -1,9 +1,8 @@
-
+import PropTypes from 'prop-types';
 import "./footerAtom.css";
 import logoF5 from '../../../assets/img/logo.png';
 
-const FooterAtom = (logo) => {
-    console.log(logo);
+const FooterAtom = ({logo}) => {
 
   return (
     <>
@@ -36,5 +35,9 @@ const FooterAtom = (logo) => {
    </>
   )
 }  
+
+FooterAtom.propTypes = {
+    logo: PropTypes.bool.isRequired,
+  };
 
 export default FooterAtom;

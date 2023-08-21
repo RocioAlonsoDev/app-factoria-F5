@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import './buttonAtom.css';
 
+
 const ButtonAtom = ({ label, onClick, color }) => {
   return (
     <button className={`button-atom ${color}`} onClick={onClick} >
