@@ -1,12 +1,13 @@
-import './App.css';
-import SignInSuccessPage from './views/SignInSuccessPage/SignInSuccessPage';
+// import RegistrationFormPage from '../src/views/RegistrationFormPage/RegistrationFormPage';
+// import SignInSuccessPage from '../src/views/SignInSuccessPage/SignInSuccessPage';
+// import LandingPage from '../src/views/LandingPage/LandingPage';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      <SignInSuccessPage></SignInSuccessPage>
+      {/* <RegistrationFormPage></RegistrationFormPage> */}
+      {/* <SignInSuccessPage></SignInSuccessPage> */}
+      {/* <LandingPage></LandingPage> */}
     </>
     )
 }

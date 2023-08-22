@@ -2,11 +2,13 @@ import './signInSuccessPage.css';
 
 import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
 import FooterAtom from '../../components/atoms/FooterAtom/FooterAtom';
-import computer from '../../assets/img/online-resume.png'
+import NavbarAtom from '../../components/atoms/NavbarAtom/NavbarAtom';
+import computer from '../../assets/img/online-resume.png';
 
 export default function SignInSuccessPage(){
     return(
         <>
+            <NavbarAtom></NavbarAtom>
             <main className='success-main'>
                <h1 className='success-title'>¡Tu solicitud ha sido enviada!</h1>
                 <div className='success-message-container'>
@@ -17,7 +19,7 @@ export default function SignInSuccessPage(){
                     </p>
                 </div>
                 <ButtonAtom label='Acceder' color='orange'></ButtonAtom>
-                <FooterAtom></FooterAtom> 
+                <FooterAtom logo={true}></FooterAtom> 
             </main>
             
         </>

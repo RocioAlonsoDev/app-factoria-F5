@@ -1,17 +1,20 @@
 .navbar {
     background-color: #080132;
     color: white;
-    height: 100px;
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    padding: 10px 0;
-    
+    height: 67px;
+    width: 90%; 
+    padding: 10px 0px 10px 10%; 
+    display: flex;
+    align-items: center;
 }
-
-h1 {
+.text {
     color: rgb(255, 255, 255);
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
+    font-size: 13pt;
+    font-weight: 400;
+    color: #B1AFBA;
+}
+.text span {
+    font-size: 16pt;
+    font-weight: 700;
+    color: white;
 }
