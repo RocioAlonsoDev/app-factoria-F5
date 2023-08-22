@@ -1,25 +1,30 @@
-.container{
+.container {
     background-color: #D9D9D9;
     width: 100%;
     height: 100vh;
 }
-.social-menu-icon{
+
+.social-menu-icon {
     width: 50px;
     padding: 10px;
 }
-.social-menu-icon img{
+
+.social-menu-icon img {
     width: 100%;
 }
-.logo-container{
+
+.logo-container {
     width: 55vw;
     max-width: 300px;
     margin: auto;
     margin-top: 5vh;
 }
+
 .logo-container img {
     width: 100%;
 }
-.welcome-menu{
+
+.welcome-menu {
     background-color: #080132;
     width: 100%;
     height: 50vh;
@@ -29,16 +34,17 @@
     color: #D9D9D9;
     text-align: center;
 }
-.welcome-menu-title{
+
+.welcome-menu-title {
     font-size: 12pt;
     padding-top: 50px;
 }
-.welcome-menu-subtitle{
+
+.welcome-menu-subtitle {
     font-size: 12pt;
 }
 
-
-.social-menu{
+.social-menu {
     width: 100%;
     height: 100vh;
     background-color: #080132ee;
@@ -48,67 +54,27 @@
     z-index: 10;
     display: none;
 }
-.active{
+
+.active {
     display: block;
 }
 
-
-
-/* .header-bg {
-    background-color: rgba(0,0,0, .85);
-    transition: .5s;
-}
-
-.social-menu {
+.social-menu ul {
+    margin-top: 25px;
+    width: 100%;
     display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.social-menu li {
-    padding: 0 1rem;
+.social-menu ul li {
+    width: 50px;
 }
 
-.social-menu a {
-    font-size: x-large;
-    font-weight: 500;
+.social-menu li img {
+    width: 100%;
 }
-
-.hamburger {
-    display: none;
-}
-
-@media screen and (max-width:1240px) {
-    .hamburger {
-        display: block;
-    }
-    #logo {
-        width: 150px;
-        height: 70px;
-        margin-bottom: 50px;
-    }
-    .social-menu {
-        position: absolute;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        left: -100%;
-        text-align: center;
-        width: 100%;
-        height: 100vh;
-        transition: 0.3s;
-        z-index: -1;
-        background: rgba(0,0,0, .9);
-    }
-
-    .social-menu.active {
-        left: 0;
-    }
-
-    .social-menu li {
-        padding: 1rem 0;
-    }
-
-    .social-menu a {
-        font-size: 2rem;
-    }
-} */
