@@ -3,6 +3,7 @@ import './userCardAtom.css';
 import duckProfilePicture from '../../../assets/img/duck.png';
 
 function UserCardAtom({user_profile_name, completed}) {
+    const cardCompleted = completed === "100" ? "user-card-complete" : "user-card-inprogress";
 
     return (
     <>
@@ -12,7 +13,7 @@ function UserCardAtom({user_profile_name, completed}) {
         </div>
         <div>
             <h2>{user_profile_name}</h2>
-            <h6 className="user-card-complete">{completed} completado </h6>
+            <h6 className={`${cardCompleted}`}>{completed}% completado </h6>
         </div>
       </div>
 
@@ -32,7 +33,7 @@ function UserCardAtom({user_profile_name, completed}) {
 
   UserCardAtom.propTypes = {
     user_profile_name: PropTypes.string.isRequired,
-    completed: PropTypes.string.isRequired, // Cambiado a string
+    completed: PropTypes.string.isRequired, 
   };
   
   export default UserCardAtom;

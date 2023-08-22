@@ -8,10 +8,10 @@ function UserCardsList() {
 
 //Prueba hardcodeada
 const data = [
-    { id: 1, user_profile_name: "Pato Elsa", completed: "50%" },
-    { id: 2, user_profile_name: "Daisy Donald", completed: "75%" },
-    { id: 3, user_profile_name: "Pio Sexto", completed: "100%" },
-    { id: 4, user_profile_name: "Lucas Looney el guapo", completed: "25%" },
+    { id: 1, user_profile_name: "Pato Elsa", completed: "50" },
+    { id: 2, user_profile_name: "Daisy Donald", completed: "75" },
+    { id: 3, user_profile_name: "Pio Sexto", completed: "100" },
+    { id: 4, user_profile_name: "Lucas Looney", completed: "25" },
     // ...
   ];
 

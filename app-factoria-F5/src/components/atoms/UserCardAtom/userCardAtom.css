@@ -27,3 +27,9 @@ h2{
     font-size: 15px;
     color: #4B9539;
 }
+
+.user-card-inprogress{
+    padding-top: 5%;
+    font-size: 15px;
+    color: #4D4D4D;
+}
