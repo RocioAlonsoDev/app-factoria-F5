@@ -1,12 +1,16 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
-import ButtonAtom from './components/atoms/ButtonAtom/ButtonAtom'
-import NavbarAtom from './components/NavbarAtom/NavbarAtom'
+import RegistrationFormPage from './views/RegistrationFormPage/RegistrationFormPage'
+
  
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
-  return (<NavbarAtom></NavbarAtom>)
+  return (
+    <>
+      <RegistrationFormPage></RegistrationFormPage>
+    </>
+    )
 }
 export default App
