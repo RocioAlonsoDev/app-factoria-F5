@@ -12,12 +12,12 @@ function UserCardAtom({user_profile_name, completed}) {
         </div>
         <div>
             <h2>{user_profile_name}</h2>
-            <h6 className="user-card-complete">{completed}</h6>
+            <h6 className="user-card-complete">{completed} completado </h6>
         </div>
       </div>
 
         {/* Tarjeta de prueba con los valores hardcodeados */}
-        <div className='user-card-container'>
+        {/* <div className='user-card-container'>
             <div className='user-card-profile-picture-container'>
                 <img className='user-card-profile-picture' src={duckProfilePicture} alt="" />
             </div>
@@ -25,14 +25,14 @@ function UserCardAtom({user_profile_name, completed}) {
                 <h2>Elsa Pato</h2>
                 <h6 className="user-card-complete">100% completado</h6>
             </div>
-        </div>
+        </div> */}
     </>
     );
   }
 
   UserCardAtom.propTypes = {
     user_profile_name: PropTypes.string.isRequired,
-    completed: PropTypes.func.isRequired,
+    completed: PropTypes.string.isRequired, // Cambiado a string
   };
   
   export default UserCardAtom;

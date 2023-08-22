@@ -1,7 +1,7 @@
 // import RegistrationFormPage from '../src/views/RegistrationFormPage/RegistrationFormPage';
 // import SignInSuccessPage from '../src/views/SignInSuccessPage/SignInSuccessPage';
 // import LandingPage from '../src/views/LandingPage/LandingPage';
-import UserCardAtom from "./components/atoms/UserCardAtom/UserCardAtom"
+import UserCardsList from "./components/molecules/UserCardsList/UserCardsList"
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       {/* <RegistrationFormPage></RegistrationFormPage> */}
       {/* <SignInSuccessPage></SignInSuccessPage> */}
       {/* <LandingPage></LandingPage> */}
-      <UserCardAtom></UserCardAtom>
+      <UserCardsList></UserCardsList>
     </>
     )
 }
