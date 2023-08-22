@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .footerText{
@@ -16,12 +20,10 @@
     padding-bottom: 5%;
     width: 86%;
     gap: 8px;
-    /* position: absolute; */
-    /* bottom: 0; */
 }
 
 .footerLogoImg{
-    width: 50%;
+    width: 200px;
     margin: 5% 0 0 0;
 }
 

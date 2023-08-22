@@ -11,10 +11,12 @@ function RegistrationFormPage() {
   return (
     <>
             <NavbarAtom/>
-            <BannerRegistrationForm/>
-            <RegistrationFormAtom/>
-            <ButtonAtom label={'Enviar'} color={'orange'}></ButtonAtom>
-            <FooterAtom logo={true}></FooterAtom>
+            <main className='registration-form-main'>
+              <BannerRegistrationForm/>
+              <RegistrationFormAtom/>
+              <ButtonAtom label={'Enviar'} color={'orange'}></ButtonAtom>
+              <FooterAtom logo={true}></FooterAtom>
+            </main>
     </>
   )
 }

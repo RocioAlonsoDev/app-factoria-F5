@@ -1,15 +1,13 @@
-// import { useState } from 'react'
-import './App.css'
-import RegistrationFormPage from './views/RegistrationFormPage/RegistrationFormPage'
-
- 
+// import RegistrationFormPage from '../src/views/RegistrationFormPage/RegistrationFormPage';
+// import SignInSuccessPage from '../src/views/SignInSuccessPage/SignInSuccessPage';
+// import LandingPage from '../src/views/LandingPage/LandingPage';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-      <RegistrationFormPage></RegistrationFormPage>
+      {/* <RegistrationFormPage></RegistrationFormPage> */}
+      {/* <SignInSuccessPage></SignInSuccessPage> */}
+      {/* <LandingPage></LandingPage> */}
     </>
     )
 }
