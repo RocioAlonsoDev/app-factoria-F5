@@ -1,0 +1,8 @@
+.cardrow {
+    display: flex;
+    align-items: center;
+}
+
+.cardrow p {
+    padding-left: 20px;
+}

@@ -4,7 +4,7 @@ import './buttonAtom.css';
 
 const ButtonAtom = ({ label, onClick, color }) => {
   return (
-    <button className={`button-atom ${color}`} onClick={onClick} >
+    <button className={`button-atom ${color}`} /*onClick={onClick} */>
       {label} 
     </button>
   );

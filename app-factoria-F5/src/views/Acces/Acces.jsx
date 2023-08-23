@@ -1,8 +1,8 @@
-import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom'; 
-import  './Acces.css'
+import ButtonAtom from "../../components/atoms/ButtonAtom/ButtonAtom"; 
+import  './Acces.css';
 
 
-function AccesAcount() {
+function Acces() {
     return (
         <div id="form-container">
             <h2>Accede a tu cuenta</h2>
@@ -16,4 +16,4 @@ function AccesAcount() {
     );
 }
 
-export default AccesAcount;
+export default Acces;

@@ -6,7 +6,7 @@ import menux from '../../assets/icons/menu-x.svg';
 import logo from '../../assets/img/logo.png';
 import logoLight from '../../assets/img/logo-light.png';
 import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
-import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
+// import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
 
 
 
@@ -32,7 +32,7 @@ function LandingPage() {
                     <ButtonAtom label={'Iniciar sesión'} color={'white'}></ButtonAtom>
                 </div>
                 
-                <FooterAtom></FooterAtom>
+                {/* <FooterAtom></FooterAtom> */}
             </div>       
         </div>
         <div className={click ? 'social-menu active' : 'social-menu'}>
