@@ -3,6 +3,7 @@
 // import RegistrationFormPage from '../src/views/RegistrationFormPage/RegistrationFormPage';
 // import SignInSuccessPage from '../src/views/SignInSuccessPage/SignInSuccessPage';
 // import LandingPage from '../src/views/LandingPage/LandingPage';
+import SearchFilterPage from "./views/SearchFilterPage/SearchFilterPage"
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       {/* <RegistrationFormPage></RegistrationFormPage> */}
       {/* <SignInSuccessPage></SignInSuccessPage> */}
       {/* <LandingPage></LandingPage> */}
+      <SearchFilterPage></SearchFilterPage>
     </>
     )
 

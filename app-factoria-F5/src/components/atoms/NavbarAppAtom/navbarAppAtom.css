@@ -2,7 +2,7 @@
     background-color: #080132;
     color: white;
     height: 30px;
-    position: fixed; 
+    /* position: fixed;  */
     top: 0; 
     max-width: 100%; 
     width: 100%;
@@ -22,7 +22,7 @@
     padding: 0 10%;
 }
 
-h2 {
+.navbar-app-greeting-text {
     color: rgb(255, 255, 255);
     display: flex; 
     align-items: center; 
