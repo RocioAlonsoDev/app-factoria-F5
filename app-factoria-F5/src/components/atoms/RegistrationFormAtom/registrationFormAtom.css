@@ -1,5 +1,4 @@
 
-
 #registrationFormContainer {
     display: flex;
     flex-direction: column;
@@ -12,7 +11,7 @@
     display: flex;
     width: 100%;
     /* flex-wrap: wrap; */
-    gap: 5%;
+    gap: 10%;
     align-content: center;
 }
 
@@ -22,7 +21,7 @@ select {
     font-size: 14px;
     padding: 10px;
     margin-top: 5px;
-    width: 100%; 
+    /* width: 100%;  */
     max-width: 100%;
     background-color: #D9D9D9;
     color: #4D4D4D;
@@ -31,7 +30,13 @@ select {
     border: none;
 }
 
-#registrationFormGenderContainer select{
+input:focus{
+    outline: 2px solid #FF4700;
+    background-color: #f7f2f0cf;
+}
+
+#registrationFormGenderContainer {
     width: auto;
+    justify-content: center;
 }
 
