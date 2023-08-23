@@ -2,8 +2,8 @@
     "name": "usuario/back-php",
     "autoload": {
         "psr-4": {
-
-            "Database\\":"app/database"
+            "App\\": "app/",
+            "Database\\":"database/"
 
         }
     },
