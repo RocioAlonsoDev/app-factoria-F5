@@ -20,10 +20,10 @@ if($_SERVER['REQUEST_METHOD']=='GET'){
     exit();
 }
 
-if($_POST['METHOD']=='POST'){
+if($_SERVER['REQUEST_METHOD']=='POST'){
     unset($_POST['METHOD']);
 
-    $data = ['FirtsName'=>$_POST['FirtsName'],
+    $data = ['FirstName'=>$_POST['FirstName'],
             'LastName'=>$_POST['LastName'],
             'Email'=>$_POST['Email'],
             'Password'=>$_POST['Password'],

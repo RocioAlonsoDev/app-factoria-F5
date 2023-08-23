@@ -1,6 +1,7 @@
 <?php 
 
 use Database\DatabaseConnection;
+require 'UsersController.php';
 
 class ApplicantsController extends UsersController{
 
@@ -18,7 +19,7 @@ class ApplicantsController extends UsersController{
             $dbConnection -> disconnect();
             return $statement;
         }catch(Exception $e){
-            die("Error: ".$e);
+            die("Error: ".$e->getMessage());
         }
 
     }
@@ -37,7 +38,7 @@ class ApplicantsController extends UsersController{
             $dbConnection -> disconnect();
             return $statement;
         }catch(Exception $e){
-            die("Error: ".$e);
+            die("Error: ".$e->getMessage());
         }
     }
 
@@ -45,20 +46,29 @@ class ApplicantsController extends UsersController{
         $dbConnection = new DatabaseConnection;
 
         try{
+            parent::createUser([
+            'LastName'=>$data['LastName'],
+            'FirstName'=>$data['FirstName'],
+            'Email'=>$data['Email'],
+            'Password'=>$data['Password']]);
 
+            $userResult = parent::getUser(['Email'=>$data['Email'],'Password'=>$data['Password']]);
+
+            $userData = $userResult->fetch(PDO::FETCH_ASSOC);
+            
+            $userID = $userData['UserID'];
             
             $query="INSERT INTO applicants (Status,Birthdate,Gender,BootcampID,Pronoun,
-            Address,PhoneNumber,DNI,applicationDate,UserID) VALUES ()";
+            Address,PhoneNumber,DNI,applicationDate,UserID) VALUES (?,?,?,?,?,?,?,?,?,?)";
 
             $connection = $dbConnection -> connect();
             $statement = $connection->prepare($query);
-            $statement->setFetchMode(PDO::FETCH_ASSOC);
-            $statement->execute();
+            $statement->execute([$data['Status'], $data['Birthdate'], $data['Gender'], $data['BootcampID'], $data['Pronoun'], $data['Address'], $data['PhoneNumber'], $data['DNI'], $data['applicationDate'], $userID]);
 
             $dbConnection -> disconnect();
-            return $statement;
+            return true;
         }catch(Exception $e){
-            die("Error: ".$e);
+            die("Error: ".$e->getMessage());
         }
     }
 
