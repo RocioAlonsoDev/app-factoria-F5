@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './openProcedure.css';
 import axios from 'axios';
 import NavbarAppAtom from '../../components/atoms/NavbarAppAtom/NavbarAppAtom';
-import UserCardList from '../../components/molecules/UserCardsList';
+import UserCardList from '../../components/molecules/UserCardsList/UserCardsList';
 import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
 //import imagen
 
