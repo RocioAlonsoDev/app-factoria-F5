@@ -12,7 +12,7 @@ function UserCardAtom({user_profile_name, completed}) {
             <img className='user-card-profile-picture' src={duckProfilePicture} alt="Foto de perfil de usuario" />
         </div>
         <div>
-            <h2>{user_profile_name}</h2>
+            <h2 className='user-card-profile-name-text'>{user_profile_name}</h2>
             <h6 className={`${cardCompleted}`}>{completed}% completado </h6>
         </div>
       </div>

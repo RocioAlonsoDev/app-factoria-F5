@@ -30,6 +30,11 @@ select {
     border: none;
 }
 
+input:focus{
+    outline: 2px solid #FF4700;
+    background-color: #f7f2f0cf;
+}
+
 #registrationFormGenderContainer {
     width: auto;
     justify-content: center;
