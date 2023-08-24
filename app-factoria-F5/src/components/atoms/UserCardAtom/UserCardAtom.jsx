@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
 import './userCardAtom.css';
 import duckProfilePicture from '../../../assets/img/duck.png';
@@ -7,7 +8,7 @@ function UserCardAtom({user_profile_name, completed}) {
 
     return (
     <>
-      <div className='user-card-container'>
+      <Link className="link-decoration" to='/UserProfilePage'><div className='user-card-container'>
         <div className='user-card-profile-picture-container'>
             <img className='user-card-profile-picture' src={duckProfilePicture} alt="Foto de perfil de usuario" />
         </div>
@@ -15,7 +16,7 @@ function UserCardAtom({user_profile_name, completed}) {
             <h2 className='user-card-profile-name-text'>{user_profile_name}</h2>
             <h6 className={`${cardCompleted}`}>{completed}% completado </h6>
         </div>
-      </div>
+      </div></Link>
 
         {/* Tarjeta de prueba con los valores hardcodeados */}
         {/* <div className='user-card-container'>
