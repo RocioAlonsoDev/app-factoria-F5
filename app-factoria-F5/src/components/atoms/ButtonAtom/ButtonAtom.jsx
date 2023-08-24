@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import './buttonAtom.css';
 
 
-const ButtonAtom = ({ label, onClick, color }) => {
+const ButtonAtom = ({ label, color , typeButton}) => {
   return (
-    <button className={`button-atom ${color}`} /*onClick={onClick} */>
+    <button className={`button-atom ${color}`} type={typeButton} >
       {label} 
     </button>
   );
@@ -12,8 +12,8 @@ const ButtonAtom = ({ label, onClick, color }) => {
 
 ButtonAtom.propTypes = {
   label: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
   color: PropTypes.string,
+  typeButton: PropTypes.string
 };
 
 export default ButtonAtom;

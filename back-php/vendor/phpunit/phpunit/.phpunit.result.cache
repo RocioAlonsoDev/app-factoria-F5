@@ -1,1 +1,1 @@
-{"version":1,"defects":{"DatabaseConnectionTest::test_databaseConnection":7,"DatabaseConnectionTest::test_query":7},"times":{"DatabaseConnectionTest::test_databaseConnection":0.006,"DatabaseConnectionTest::test_query":0.016}}
+{"version":1,"defects":{"DatabaseConnectionTest::test_databaseConnection":7,"DatabaseConnectionTest::test_query":7},"times":{"DatabaseConnectionTest::test_databaseConnection":0.043,"DatabaseConnectionTest::test_query":0.053}}
