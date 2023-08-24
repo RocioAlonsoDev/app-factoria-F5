@@ -5,16 +5,7 @@ import RegistrationFormPage from "../views/RegistrationFormPage/RegistrationForm
 import SignInSuccessPage from "../views/SignInSuccessPage/SignInSuccessPage";
 import SearchFilterPage from "../views/SearchFilterPage/SearchFilterPage"
 import UserProfilePage from "../views/UserProfilePage/UserProfilePage";
-import RPqueriesPage from "../views/RPqueriesPage/RPqueriesPage";
 
-//importo paginas
-
-//import Description from "../components/pages/Description"
-
-/*<Route path='/features' element= {<Features/>}></Route>
-
-                
-                <Route path='/extra' element= {<Extra/>}></Route>*/
 
 const Router= () => {
     return(

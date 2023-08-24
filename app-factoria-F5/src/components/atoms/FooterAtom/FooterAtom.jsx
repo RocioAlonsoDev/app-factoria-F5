@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./footerAtom.css";
 import logoF5 from '../../../assets/img/logo.png';
 
+
 const FooterAtom = ({logo}) => {
 
   return (

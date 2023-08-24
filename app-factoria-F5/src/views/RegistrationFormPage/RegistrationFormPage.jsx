@@ -2,7 +2,7 @@ import './registrationFormPage.css';
 import NavbarAtom from '../../components/atoms/NavbarAtom/NavbarAtom';
 import BannerRegistrationForm from '../../components/molecules/BannerRegistrationForm.jsx/BannerRegistrationForm';
 import RegistrationFormAtom from '../../components/atoms/RegistrationFormAtom/RegistrationFormAtom';
-import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
+import FooterAtom from '../../components/atoms/FooterAtom/FooterAtom';
 
 
 function RegistrationFormPage() {
@@ -15,6 +15,7 @@ function RegistrationFormPage() {
               <RegistrationFormAtom/>
               <FooterAtom logo={true}></FooterAtom>
             </main>
+            
     </>
   )
 }
