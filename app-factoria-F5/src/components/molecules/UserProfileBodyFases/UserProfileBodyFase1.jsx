@@ -1,8 +1,8 @@
-import "./userProfileBodyFase2.css";
+import "./userProfileBodyFases.css";
 import UserProfileSubcategoryCard from "../../atoms/UserProfileSubcategoryCard/UserProfileSubcategoryCard";
 import SearchResultButtonAtom from "../../atoms/SearchResultButtonAtom/SearchResultButtonAtom";
 
-function UserProfileBodyFase2() {
+function UserProfileBodyFase1() {
   return (
     <>
       <section>
@@ -10,7 +10,6 @@ function UserProfileBodyFase2() {
         <UserProfileSubcategoryCard
           subsection_title={"Correo electrónico"}
           subsection_response={"elsapato@ejemplo.com"}
-          checkbox={true}
         ></UserProfileSubcategoryCard>
         <UserProfileSubcategoryCard
           subsection_title={"Móvil"}
@@ -50,4 +49,4 @@ function UserProfileBodyFase2() {
   );
 }
 
-export default UserProfileBodyFase2;
+export default UserProfileBodyFase1 ;

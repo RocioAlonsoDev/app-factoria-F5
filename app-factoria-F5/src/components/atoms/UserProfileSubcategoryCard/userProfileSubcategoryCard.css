@@ -19,9 +19,17 @@
     margin-top: 5%;
 }
 
-/* .show-checkbox{
+.subsection_archive_link {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-size: 15px;
+    margin-top: 5%;
+    cursor: pointer;
+} 
 
-} */
+.subsection_archive_link:visited {
+    color: #FF4700;
+}
 
 .none-checkbox{
     display: none;

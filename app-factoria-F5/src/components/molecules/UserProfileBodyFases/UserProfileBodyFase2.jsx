@@ -1,8 +1,8 @@
-import "./userProfileBodyFase1.css";
+import "./userProfileBodyFases.css";
 import UserProfileSubcategoryCard from "../../atoms/UserProfileSubcategoryCard/UserProfileSubcategoryCard";
 
 
-function UserProfileBodyFase1() {
+function UserProfileBodyFase2() {
   return (
     <>
       <section>
@@ -34,4 +34,4 @@ function UserProfileBodyFase1() {
   );
 }
 
-export default UserProfileBodyFase1;
+export default UserProfileBodyFase2;

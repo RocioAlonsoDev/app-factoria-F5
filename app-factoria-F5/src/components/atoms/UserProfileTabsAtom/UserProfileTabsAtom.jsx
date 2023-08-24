@@ -19,7 +19,7 @@ function UserProfileTabsAtom({element_fase3, element_fase2, element_fase1}) {
                     </section>
                 </div> 
                 <div id="tab1" className="tab">
-                    <a href="#tab1">Fase 1</a>
+                    <a href="#tab1" default>Fase 1</a>
                     <section className="tab-body-content">
                         {element_fase1}
                     </section> 
