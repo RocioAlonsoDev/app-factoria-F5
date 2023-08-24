@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './registrationFormAtom.css'
 import ButtonAtom from '../ButtonAtom/ButtonAtom'
 
@@ -44,7 +45,7 @@ const RegistrationFormAtom = () => {
                     <option value="" disabled selected hidden>¿Qué formación le interesa?</option>
                     <option value="1">FemNorte</option>
                 </select>
-                <ButtonAtom label={'Enviar'} color={'orange'} type={'submit'}></ButtonAtom>
+                <Link className="link-decoration" to='/Acces'><ButtonAtom label={'Enviar'} color={'orange'} type={'submit'}> </ButtonAtom> </Link>
             </form>
             
         </>

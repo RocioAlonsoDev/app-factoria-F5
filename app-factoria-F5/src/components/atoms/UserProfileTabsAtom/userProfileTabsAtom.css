@@ -3,7 +3,7 @@
 }
 
 .user-profile-tabs-section-container{
-  margin-top: 5%;
+  margin-top: -2%;
   padding: 0;
   color: #4D4D4D;
 }  
@@ -47,31 +47,9 @@
   left: 260px;
 }
 
-/* funcionamiento básico del sistema de pestañas */
-
-/* .tab:target .tab-body-content, .tab:last-of-type .tab-body-content {
-  display: block;
-}
-
-.tab:target ~ .tab:last-of-type .tab-body-content {
-  display: none;
-}
-.tab:target>a, .tab:last-of-type>a {
-  background-color: #ffff; 
-  color: #FF4700;
-  z-index: 200;
-}
-.tab:target ~ .tab:last-of-type>a {
-  background-color: #ffff; 
-  color:#FF4700;
-  z-index: 0; 
-}  */
-
-
 .tab:target .tab-body-content {
   display: block;
-  background-color: #FFFFFF; 
-  
+  background-color: #FFFFFF;  
 }
 
 .tab:target > a {
@@ -84,7 +62,7 @@
   display: none;
 }
 .tab:not(:target) > a {
-  background-color: #ffff; 
+  background-color: #ebe9e9; 
   color: #4D4D4D; 
 }
 

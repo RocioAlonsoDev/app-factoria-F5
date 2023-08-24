@@ -78,3 +78,7 @@
 .social-menu li img {
     width: 100%;
 }
+
+.link-decoration {
+    text-decoration: none;
+}
