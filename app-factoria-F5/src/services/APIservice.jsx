@@ -16,25 +16,25 @@ export default function APIservice (url,method,params){
             }
     };
 
-    const postData = async (url,params) =>{
-        try{
-            const response = await axios.post(url, params)
-            console.log(response);
-            setData(response);
-        }catch(error){
-            console.error(error);
-            setData(null);
-        }
-    }
+    // const postData = async (url,params) =>{
+    //     try{
+    //         const response = await axios.post(url, params)
+    //         console.log(response);
+    //         setData(response);
+    //     }catch(error){
+    //         console.error(error);
+    //         setData(null);
+    //     }
+    // }
 
     useEffect(() => {
         switch(method){
             case 'READ' : 
             getData(url);
             break;
-            case 'CREATE' :
-            postData(url,params);
-            break;
+            // case 'CREATE' :
+            // postData(url,params);
+            // break;
         }
     }, [url,method,params]);
         
