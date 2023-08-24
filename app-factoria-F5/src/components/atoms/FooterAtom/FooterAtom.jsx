@@ -1,14 +1,14 @@
+import PropTypes from 'prop-types';
 import "./footerAtom.css";
+import logoF5 from '../../../assets/img/logo.png';
 
+const FooterAtom = ({logo}) => {
 
-const FooterAtom = () => {
-    
   return (
     <>
-  
-        <div>
+         <footer>
             <div className="footer">
-            
+            <img className={logo ? "footerLogoImg" : "footerLogoImgNone"} src={logoF5} alt="" />
                 <div className="footerText">
                     <p className="paragrafFooter">Todos los derechos reservados 2021</p>
                     <div className="footerLinks">
@@ -30,10 +30,14 @@ const FooterAtom = () => {
                 </div>
         
             </div>
-        </div>
+        </footer>
  
    </>
   )
 }  
+
+FooterAtom.propTypes = {
+    logo: PropTypes.bool.isRequired,
+  };
 
 export default FooterAtom;

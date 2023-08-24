@@ -1,11 +1,9 @@
-import './NavbarAtom.css'
+import './NavbarAtom.css';
 
 function NavbarAtom() {
     return (
       <nav className='navbar'>
-        
-        <h1 className='text'>Inicio/Inscripción</h1>
-        {/* Contenido de la página */}
+        <h1 className='text'>Inicio / <span>Inscripción</span></h1>
       </nav>
     );
   }
