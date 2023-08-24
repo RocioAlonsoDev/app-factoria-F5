@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import './registrationFormAtom.css'
 import axios from 'axios';
 import ButtonAtom from '../ButtonAtom/ButtonAtom'
