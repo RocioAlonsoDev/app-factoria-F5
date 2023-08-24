@@ -4,20 +4,27 @@
     height: 10vh;
     display: flex;
     gap: 7%;
-    padding: 2% 15%;
+    /* padding: 2% 15%; */
     align-items: center;
     border-bottom: 1px solid #4D4D4D; 
+}
+
+.user-card-container:hover{
+    outline: 4px solid #FF4700;
+    /* background-color: #f9dcd0cf; */
+    background-color: #f7f2f0cf;
 }
 
 .user-card-profile-picture-container{
     width: 17%;
     border-radius: 50%;
+    padding: 0 0 0 8%;
 }
 .user-card-profile-picture{
     width: 100%;
 }
 
-h2{
+.user-card-profile-name-text{
     color: #080132;
     font-size: 22px;
     font-weight: 800;

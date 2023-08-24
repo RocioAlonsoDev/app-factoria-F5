@@ -24,3 +24,7 @@
     padding: 10px;
     height: fit-content;
 }
+
+.link-decoration {
+    text-decoration: none;
+}

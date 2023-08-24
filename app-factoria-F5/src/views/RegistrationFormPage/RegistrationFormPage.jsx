@@ -2,8 +2,7 @@ import './registrationFormPage.css';
 import NavbarAtom from '../../components/atoms/NavbarAtom/NavbarAtom';
 import BannerRegistrationForm from '../../components/molecules/BannerRegistrationForm.jsx/BannerRegistrationForm';
 import RegistrationFormAtom from '../../components/atoms/RegistrationFormAtom/RegistrationFormAtom';
-import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
-import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
+import FooterAtom from '../../components/atoms/FooterAtom/FooterAtom';
 
 
 function RegistrationFormPage() {
@@ -14,9 +13,9 @@ function RegistrationFormPage() {
             <main className='registration-form-main'>
               <BannerRegistrationForm/>
               <RegistrationFormAtom/>
-              <ButtonAtom label={'Enviar'} color={'orange'}></ButtonAtom>
               <FooterAtom logo={true}></FooterAtom>
             </main>
+            
     </>
   )
 }

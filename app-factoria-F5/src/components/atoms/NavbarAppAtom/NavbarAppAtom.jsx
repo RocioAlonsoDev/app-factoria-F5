@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import menux from '../../../assets/icons/menu-x.svg';
 import logoLight from '../../../assets/img/logo-light.png';
 
@@ -22,24 +23,26 @@ function NavbarAppAtom({name_greeting}) {
 
 
 
-        <div className={click ? 'social-menu active' : 'social-menu'}>
+        <div className={click ? 'social-menu-app active' : 'social-menu-app'}>
             <div className='social-menu-icon' onClick={handleClick}>
                 <img src={menux} alt="Menu desplegable."/>    
             </div>
-            <div className='logo-container'>
+            <Link className="link-decoration" to='/'><div className='logo-container'>
                 <a href='https://factoriaf5.org/'><img src={logoLight} alt="logo." /></a>
-            </div>
+            </div></Link> 
             <ul>
-                <a href="">
+                
+                <Link className="link-decoration" to='/SearchFilterPage'>
                     <li>
-                        CONSULTAS
+                    CONSULTAS
                     </li>
-                </a>
-                <a href="">
+                </Link> 
+            
+                <Link className="link-decoration" to='/'>
                     <li id='social-menu-orange'>
                         CERRAR SESION
                     </li>
-                </a>
+                </Link>
 
             </ul>
         </div>

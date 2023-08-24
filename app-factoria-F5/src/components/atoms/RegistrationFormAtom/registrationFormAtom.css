@@ -15,7 +15,7 @@
     align-content: center;
 }
 
-input,
+#registrationFormContainer input,
 textarea,
 select {
     font-size: 14px;
@@ -28,6 +28,11 @@ select {
     border-radius: 5px;
     /* outline: none; */
     border: none;
+}
+
+input:focus{
+    outline: 2px solid #FF4700;
+    background-color: #f7f2f0cf;
 }
 
 #registrationFormGenderContainer {

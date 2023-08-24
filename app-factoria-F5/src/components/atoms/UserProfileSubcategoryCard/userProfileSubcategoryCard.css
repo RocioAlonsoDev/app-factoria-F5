@@ -1,0 +1,36 @@
+.card-subsection-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5% 0 2%;
+    margin-bottom: 5%;
+}
+
+.subsection-title{
+    color:#080132;
+    font-size: 15px;
+    margin-bottom: 3%;
+    font-weight: 600;
+}
+
+.subsection-response{
+    color: #4D4D4D;
+    font-size: 15px;
+    margin-top: 5%;
+}
+
+.subsection_archive_link {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-size: 15px;
+    margin-top: 5%;
+    cursor: pointer;
+} 
+
+.subsection_archive_link:visited {
+    color: #FF4700;
+}
+
+.none-checkbox{
+    display: none;
+}

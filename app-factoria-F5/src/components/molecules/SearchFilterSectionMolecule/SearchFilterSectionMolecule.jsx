@@ -8,22 +8,20 @@ const SearchFilterSectionMolecule = () => {
     <>
         <section className='search-filter-section-container'>
             <div className='search-filter-container'>
-                    <div className='filter-icon-container'>
+                    <button className='filter-icon-container'>
                         <img src={filterIcon} className="filter-icon" alt="Icono filtro"/>
                     <div className='filter-notification'>
                     </div>
-                    </div>
+                    </button>
                 <input type="text" id="search" placeholder='Buscar...'></input>
             </div>
             <div className='search-filter-result-container'>
 
                 <div className='results-buttons-container'>
-                    <SearchResultButtonAtom result_name="Digital Academy"></SearchResultButtonAtom>
-                    <SearchResultButtonAtom result_name="FEM Norte"></SearchResultButtonAtom>
-                    <SearchResultButtonAtom result_name="Digital Academy"></SearchResultButtonAtom>
-                    <SearchResultButtonAtom result_name="FEM Norte"></SearchResultButtonAtom>
-                    <SearchResultButtonAtom result_name="Digital Academy"></SearchResultButtonAtom>
-                    <SearchResultButtonAtom result_name="FEM Norte"></SearchResultButtonAtom>
+                    <SearchResultButtonAtom search_result_button_atom_style="search-result-button-atom" result_name="Digital Academy"></SearchResultButtonAtom>
+                    <SearchResultButtonAtom search_result_button_atom_style="search-result-button-atom" result_name="FEM Norte"></SearchResultButtonAtom>
+                    <SearchResultButtonAtom search_result_button_atom_style="search-result-button-atom" result_name="Digital Academy"></SearchResultButtonAtom>
+                    <SearchResultButtonAtom search_result_button_atom_style="search-result-button-atom" result_name="FEM Norte"></SearchResultButtonAtom>
                 </div>
             </div>
             <p className='total-results-text'>150 resultados</p>

@@ -48,3 +48,12 @@
     justify-content: space-between;
     word-spacing: 5px;
 }
+
+#logo {
+    width: 60%;
+}
+
+.link-decoration{
+    text-decoration:none;
+}
+
