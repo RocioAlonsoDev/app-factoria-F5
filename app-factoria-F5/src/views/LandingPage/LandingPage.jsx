@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from "react-router-dom";
 import './landingPage.css';
 import menubars from '../../assets/icons/menu-bars.svg';
 import menux from '../../assets/icons/menu-x.svg';
@@ -15,6 +16,7 @@ import youtubeHover from '../../assets/icons/youtube-hover.svg';
 import facebook from '../../assets/icons/facebook.svg';
 import facebookHover from '../../assets/icons/facebook-hover.svg';
 import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
+
 // import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
 
 
@@ -38,8 +40,8 @@ function LandingPage() {
                 <p className='welcome-menu-subtitle'>Comenzar con su cuenta</p>
 
                 <div className='button-group'>
-                    <ButtonAtom label={'Inscripción'} color={'orange'}></ButtonAtom>
-                    <ButtonAtom label={'Iniciar sesión'} color={'white'}></ButtonAtom>
+                <Link className="link-decoration" to="/RegistrationFormPage"><ButtonAtom label={'Inscripción'} color={'orange'}></ButtonAtom></Link>
+                <Link className="link-decoration" to="/Acces"><ButtonAtom label={'Iniciar sesión'} color={'white'}></ButtonAtom></Link>
                 </div>
                 
                 {/* <FooterAtom></FooterAtom> */}
