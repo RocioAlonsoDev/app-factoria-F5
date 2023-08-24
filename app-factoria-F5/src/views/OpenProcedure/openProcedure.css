@@ -1,0 +1,101 @@
+.open-procedure-container{
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.bootcamp-banner-container{
+    background-image: '';
+}
+
+.banner-container{
+    width: 100%;
+    height: 13vh;
+    margin-top: -5%;
+    display: flex;
+}
+
+.bootcamp-title{
+    color: #ffff;
+    padding: 18% 6%;
+}
+
+.bootcamp-dates-container{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #4D4D4D;
+}
+
+.dates-info-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#dates-start{
+    justify-content: flex-start;
+}
+
+#dates-end{
+    justify-content: flex-end;
+}
+
+#dates-center{
+    padding-top: 6%;
+}
+
+.dates-info-container h5 {
+    color: #080132;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+.dates-info-container h6 {
+    color: #FF4700;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+
+.bootcamp-stack-container{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #4D4D4D; 
+}
+
+.bootcamp-stack-container ul {
+    margin-top: 3%;
+}
+
+.bootcamp-stack-container ul li {
+    list-style: none;
+    margin-top: 2%;
+}
+
+.bootcamp-description-container{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #4D4D4D; 
+}
+
+.bootcamp-description-container h3{
+    margin: 0 0 5% 0;
+}
+
+.bootcamp-cantidad-coders-container{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.bootcamp-cantidad-coders-container h3{
+    margin: 0 0 2% 0;   
+}
