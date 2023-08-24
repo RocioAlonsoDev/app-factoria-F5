@@ -15,7 +15,8 @@ import youtubeHover from '../../assets/icons/youtube-hover.svg';
 import facebook from '../../assets/icons/facebook.svg';
 import facebookHover from '../../assets/icons/facebook-hover.svg';
 import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
-import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
+// import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
+
 
 
 function LandingPage() {
@@ -41,7 +42,7 @@ function LandingPage() {
                     <ButtonAtom label={'Iniciar sesión'} color={'white'}></ButtonAtom>
                 </div>
                 
-                <FooterAtom></FooterAtom>
+                {/* <FooterAtom></FooterAtom> */}
             </div>       
         </div>
         
