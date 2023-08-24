@@ -48,7 +48,7 @@
     width: 100%;
 }
 
-.social-menu {
+.social-menu-app {
     width: 100%;
     height: 100vh;
     background-color: #080132ee;
@@ -61,9 +61,10 @@
 
 .active {
     display: block;
+    z-index: 500;
 }
 
-.social-menu ul {
+.social-menu-app ul {
     margin-top: 25px;
     width: 100%;
     display: flex;
@@ -75,12 +76,13 @@
     gap: 10px;
 }
 
-.social-menu ul a{
+.social-menu-app ul a{
     text-decoration: none;
     margin: auto;
 }
 
-.social-menu ul li {
+.social-menu-app ul li {
+    width: auto;
     padding-top: 30%;
     font-size: 20px;
     font-weight: bolder;
@@ -89,8 +91,9 @@
 
 #social-menu-orange{
     color: #FF4700;
+    width: auto;
 }
-.social-menu li img {
+.social-menu-app li img {
     width: 100%;
 }
 
