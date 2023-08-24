@@ -5,6 +5,7 @@ import RegistrationFormPage from "../views/RegistrationFormPage/RegistrationForm
 import SignInSuccessPage from "../views/SignInSuccessPage/SignInSuccessPage";
 import SearchFilterPage from "../views/SearchFilterPage/SearchFilterPage"
 import UserProfilePage from "../views/UserProfilePage/UserProfilePage";
+import RPqueriesPage from "../views/RPqueriesPage/RPqueriesPage";
 
 //importo paginas
 
@@ -20,11 +21,12 @@ const Router= () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element= {<LandingPage/>}></Route>
-                <Route path='/Acces' element= {<Acces/>}></Route>
-                <Route path='/RegistrationFormPage' element={<RegistrationFormPage></RegistrationFormPage>}></Route>
-                <Route path='/SignInSuccessPage' element={<SignInSuccessPage></SignInSuccessPage>}></Route>
-                <Route path='/SearchFilterPage' element={<SearchFilterPage></SearchFilterPage>}></Route>
-                <Route path='/UserProfilePage' element={<UserProfilePage></UserProfilePage>}></Route>
+                <Route path='/acceso' element= {<Acces/>}></Route>
+                <Route path='/registro' element={<RegistrationFormPage></RegistrationFormPage>}></Route>
+                <Route path='/registro-exitoso' element={<SignInSuccessPage></SignInSuccessPage>}></Route>
+                <Route path='/consultas' element={<RPqueriesPage></RPqueriesPage>}></Route>
+                <Route path='/consultas/postulantes' element={<SearchFilterPage></SearchFilterPage>}></Route>
+                <Route path='/usuario' element={<UserProfilePage></UserProfilePage>}></Route>
                 {/* <Route path='/screens' element= {<Screens/>}></Route> */}
             </Routes>
         </BrowserRouter>

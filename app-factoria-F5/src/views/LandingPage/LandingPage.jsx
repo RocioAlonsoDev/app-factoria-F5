@@ -40,8 +40,8 @@ function LandingPage() {
                 <p className='welcome-menu-subtitle'>Comenzar con su cuenta</p>
 
                 <div className='button-group'>
-                <Link className="link-decoration" to="/RegistrationFormPage"><ButtonAtom label={'Inscripción'} color={'orange'}></ButtonAtom></Link>
-                <Link className="link-decoration" to="/Acces"><ButtonAtom label={'Iniciar sesión'} color={'white'}></ButtonAtom></Link>
+                <Link className="link-decoration" to="/registro"><ButtonAtom label={'Inscripción'} color={'orange'}></ButtonAtom></Link>
+                <Link className="link-decoration" to="/acceso"><ButtonAtom label={'Iniciar sesión'} color={'white'}></ButtonAtom></Link>
                 </div>
                 
                 {/* <FooterAtom></FooterAtom> */}
