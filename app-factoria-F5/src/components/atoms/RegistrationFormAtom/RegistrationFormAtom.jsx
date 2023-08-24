@@ -1,15 +1,36 @@
 import { Link } from "react-router-dom";
 import './registrationFormAtom.css'
+import axios from 'axios';
 import ButtonAtom from '../ButtonAtom/ButtonAtom'
+import { useNavigate } from "react-router-dom";
+// import APIservice from '../../../services/APIservice';
 
 const RegistrationFormAtom = () => {
 
     const FORM_ENDPOINT = "http://localhost/05-app-factoria-F5/back-php/API/applicants.php";
+    const navigate = useNavigate();
+        
+    const handleSubmit = (event) => {
 
+        event.preventDefault();
+
+        try {
+
+            axios.post(FORM_ENDPOINT,new FormData(event.target))
+            .then(response=>{
+                if(response.data){
+                    navigate('/success');
+                }
+            })
+        } catch (error) {
+            console.error("Error submitting form:", error);
+        }
+    };
+      
     return (
         <>
         
-            <form id="registrationFormContainer" action={FORM_ENDPOINT} method='POST'>
+            <form id="registrationFormContainer" onSubmit={handleSubmit}>
                 <input type="text" id="name" placeholder='Nombre' name='FirstName' required></input>
                 <br></br>
                 <input type="text" id="surname" placeholder='Apellidos' name='LastName' required></input>
@@ -45,11 +66,13 @@ const RegistrationFormAtom = () => {
                     <option value="" disabled selected hidden>¿Qué formación le interesa?</option>
                     <option value="1">FemNorte</option>
                 </select>
-                <Link className="link-decoration" to='/Acces'><ButtonAtom label={'Enviar'} color={'orange'} type={'submit'}> </ButtonAtom> </Link>
+
+                <ButtonAtom label={'Enviar'} color={'orange'} type={'submit'} ></ButtonAtom>
+
             </form>
             
         </>
    );
 };
 
-export default RegistrationFormAtom;
+export default RegistrationFormAtom

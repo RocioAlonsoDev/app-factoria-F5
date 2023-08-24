@@ -5,18 +5,11 @@ import ButtonAtom from '../atoms/ButtonAtom/ButtonAtom';
 export default function Prueba(){
     //index
     const applicants ='http://localhost/05-app-factoria-F5/back-php/API/applicants.php';
-    let data = APIservice(applicants,'READ',null);
+    let data = APIservice(applicants,'READ');
 
     //get
     const applicant ='http://localhost/05-app-factoria-F5/back-php/API/applicants.php?id=2';
-    let applicantdata = APIservice(applicant,'READ',null);
-    
-    const requestData = {
-        '':'',
-    };
-
-
-    let request = APIservice(applicants,'CREATE',requestData);
+    let applicantdata = APIservice(applicant,'READ');
     
 
     return(

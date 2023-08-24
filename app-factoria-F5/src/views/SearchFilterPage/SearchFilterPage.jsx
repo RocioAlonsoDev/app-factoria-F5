@@ -1,6 +1,6 @@
 import './searchFilterPage.css';
 import NavbarAtomApp from '../../components/atoms/NavbarAppAtom/NavbarAppAtom'
-import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
+import FooterAtom from '../../components/atoms/FooterAtom/FooterAtom';
 import SearchFilterSectionMolecule from '../../components/molecules/SearchFilterSectionMolecule/SearchFilterSectionMolecule';
 import UserCardsList from '../../components/molecules/UserCardsList/UserCardsList'
 
