@@ -52,12 +52,3 @@
 #logo {
     width: 60%;
 }
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-
-}

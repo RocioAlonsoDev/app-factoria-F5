@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import "./footerAtom.css";
-import logo from '../../../assets/img/logo.png';
 
 const FooterAtom = ({logo}) => {
 
