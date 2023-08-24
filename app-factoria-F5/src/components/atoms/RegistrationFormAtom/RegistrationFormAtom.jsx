@@ -42,6 +42,7 @@ const RegistrationFormAtom = () => {
                     <option value="Digital Academy">Digital Academy - Asturias - El</option>
                     <option value="Otro">xxxx</option>
                 </select>
+
             </form>
             
         </>

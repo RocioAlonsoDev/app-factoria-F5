@@ -1,14 +1,24 @@
 import APIservice from '../../services/APIservice';
+import RegistrationFormAtom from '../atoms/RegistrationFormAtom/RegistrationFormAtom';
+import ButtonAtom from '../atoms/ButtonAtom/ButtonAtom';
 
 export default function Prueba(){
     //index
     const applicants ='http://localhost/05-app-factoria-F5/back-php/API/applicants.php';
-    let data = APIservice(applicants,'READ');
+    let data = APIservice(applicants,'READ',null);
 
     //get
     const applicant ='http://localhost/05-app-factoria-F5/back-php/API/applicants.php?id=2';
-    let applicantdata = APIservice(applicant,'READ');
+    let applicantdata = APIservice(applicant,'READ',null);
     
+    const requestData = {
+        '':'',
+    };
+
+
+    let request = APIservice(applicants,'CREATE',requestData);
+    
+
     return(
         <>
             {data && data.map((applicant,index)=>{
@@ -23,6 +33,9 @@ export default function Prueba(){
                 )
             }
             )}
+            <RegistrationFormAtom></RegistrationFormAtom>
+            <ButtonAtom></ButtonAtom>
+
         </>
     )
 }
