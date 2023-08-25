@@ -18,7 +18,12 @@
 }
 .queries-list{
     padding-left: 15px;
-    margin-left: 20px;  
+    margin-left: 20px;
+    list-style-type: square;
+    color: #4D4D4D;
+}
+.queries-list li {
+    padding-bottom: 10px;
 }
 .queries-list a{
     color: #4D4D4D;

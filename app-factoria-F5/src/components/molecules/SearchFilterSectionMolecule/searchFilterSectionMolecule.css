@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 5%;
+    padding: 0 5%;
     justify-content: center;
     align-items: center;
     /* margin-top: 10%; */
@@ -73,6 +73,7 @@ input:focus{
 
 .results-buttons-container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 3%;
 }
@@ -82,5 +83,5 @@ input:focus{
     margin: 5% 0;
     padding-left: 2%;
     color: #4D4D4D;
-    font-size: 18px;
+    font-size: 15px;
 }

@@ -6,7 +6,7 @@
     gap: 7%;
     /* padding: 2% 15%; */
     align-items: center;
-    border-bottom: 1px solid #4D4D4D; 
+    border-bottom: 1px solid #c2c2c2; 
 }
 
 .user-card-container:hover{
@@ -18,16 +18,15 @@
 .user-card-profile-picture-container{
     width: 17%;
     border-radius: 50%;
-    padding: 0 0 0 8%;
+    padding: 2% 0 0 8%;
 }
 .user-card-profile-picture{
-    width: 100%;
+    width: 80%;
 }
-
 .user-card-profile-name-text{
     color: #080132;
     font-size: 22px;
-    font-weight: 800;
+    font-weight: 700;
 }
 .user-card-complete{
     padding-top: 5%;

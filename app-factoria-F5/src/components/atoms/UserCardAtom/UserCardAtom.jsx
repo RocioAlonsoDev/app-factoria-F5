@@ -6,9 +6,11 @@ import duckProfilePicture from '../../../assets/img/duck.png';
 function UserCardAtom({user_profile_name, completed}) {
     const cardCompleted = completed === "100" ? "user-card-complete" : "user-card-inprogress";
 
+
+
     return (
     <>
-      <Link className="link-decoration" to='/UserProfilePage'><div className='user-card-container'>
+      <Link className="link-decoration" to='/usuario'><div className='user-card-container'>
         <div className='user-card-profile-picture-container'>
             <img className='user-card-profile-picture' src={duckProfilePicture} alt="Foto de perfil de usuario" />
         </div>
