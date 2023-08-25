@@ -1,0 +1,18 @@
+.bannerContainer{
+    padding: 5%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleRompemosLosCodigos{
+    color: #080132;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtittleRompemosLosCodigos{
+    font-size: 15px;
+    margin: 4% 0 5% 0;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}

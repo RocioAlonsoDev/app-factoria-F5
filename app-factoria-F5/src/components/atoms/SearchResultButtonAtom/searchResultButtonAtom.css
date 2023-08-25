@@ -1,0 +1,43 @@
+.search-result-button-atom{
+    width: 140px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 5% auto;
+    border: none;
+    border-radius: 80px;
+    background-color: #D9D9D9;
+    color: #080132; text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-result-button-atom:hover {
+    background-color: #FF4700;
+    color: #D9D9D9; text-align: center;
+}
+
+.user-profile-bootcamp-interest{
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    margin: 5% auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #FF4700;
+    color: #D9D9D9; text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-profile-bootcamp-interest:hover {
+    background-color: #D9D9D9;
+    color: #FF4700; text-align: center;
+}

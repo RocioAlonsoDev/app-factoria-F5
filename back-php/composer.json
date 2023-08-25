@@ -1,0 +1,11 @@
+{
+    "name": "usuario/back-php",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\":"database/"
+
+        }
+    },
+    "require": {}
+}
