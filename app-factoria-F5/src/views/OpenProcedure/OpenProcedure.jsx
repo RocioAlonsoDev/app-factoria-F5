@@ -1,75 +1,63 @@
-import { useEffect, useState } from 'react';
 import './openProcedure.css';
-import axios from 'axios';
+import ImageBannerBootcamp from '../../assets/img/image1.png';
 import NavbarAppAtom from '../../components/atoms/NavbarAppAtom/NavbarAppAtom';
 import UserCardList from '../../components/molecules/UserCardsList/UserCardsList';
 import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
-//import imagen
+
 
 function OpenProcedure() {
-  const baseUrl="http://localhost/app-factoria-F5/";
-  const [data, setData]=useState([]);
-
-  const getRequest=async()=>{
-    await axios.get(baseUrl)
-    .then(response=>{
-      //console.log(response.data);
-      setData(response.data);
-    })
-  }
-
-  useEffect(()=>{
-    getRequest();
-  },[])
-
-    const [click, setClick] = useState(false)
-    const handleClick = () => setClick(!click)
-    
   return (
     <>
-    <NavbarAppAtom></NavbarAppAtom>
-    <img src={}></img>
-    <h2>{bootcamp.courseName}</h2>
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Inicia</th>
-            <th>Finaliza</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map(botcamp=>(
-            <tr key={bootcamp.BootcampID}>
-              <td>{bootcamp.StartDate}</td>
-              <td>{bootcamp.EndDate}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+      <NavbarAppAtom name_greeting={'Ana'}></NavbarAppAtom>
+      <main className='open-procedure-container'>
+        <div className='bootcamp-banner-container'>
+          <div className="banner-container" style={{ backgroundImage:`url(${ImageBannerBootcamp})`,backgroundRepeat:"no-repeat",backgroundSize:"cover" }}>
+            <h2 className="bootcamp-title">Femcoders P3</h2>
+          </div>          
+        </div>
 
-    <div>
-        <h3>Stack</h3>
-        <p key={stack.StackID}>{stack.StackName}</p>
-    </div>
+        <div className="bootcamp-dates-container" >
+          <div className='dates-info-container' id="dates-start">
+            <h5>Inicio</h5>
+            <h6>Mayo 2024</h6>  
+          </div>
+          <div className='dates-info-container' id="dates-center">
+            <h6>&gt;&gt;</h6>
+          </div>
+          <div className='dates-info-container' id="dates-end">
+            <h5>Inicio</h5>
+            <h6>Mayo 2024</h6>  
+          </div>
+        </div>
 
-    <div>
-        <h3>Descripción</h3>
-        <p key={bootcamp.bootcampID}>{bootcamp.courseDescription}</p>
-    </div>
+        <div className='bootcamp-stack-container'>
+            <h3>Stack</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+            </ul>
+        </div>
 
-    <div>
-        <h3>Coders</h3>
-        <UserCardList></UserCardList>
-        
-    </div>
-    <ButtonAtom label={'Cerrar Selección'} color={'orange'}></ButtonAtom>
-
+        <div className='bootcamp-description-container'>
+            <h3>Descripción</h3>
+            <p>Bootcamp inclusivo dirigido exclusivamente a mujeres en situación de vulnerabilidad (en situación de desempleo, inmigrantes o refugiadas, supervivientes de violencia machista…).</p>
+        </div>
+      
+        <div className='bootcamp-cantidad-coders-container'>
+          <h3>Coders</h3>
+          <p>24 asignados</p>
+        </div>
+          <UserCardList></UserCardList>
+          
+          <ButtonAtom label={'Cerrar Selección'} color={'orange'}></ButtonAtom>
+      </main>
+      
     </>
     )
 }
 
 export default OpenProcedure;
-/*USER CARD LIST <p key={applicants.UserID}>{users.LastName}</p>
-        <p key={applicants.UserID}>{users.FirstName}</p>*/

@@ -26,7 +26,7 @@
 .tab>a {
   background-color: #ffff; 
   padding: 10px;
-  border: 2px solid #FF4700;
+
   border-radius: 10px 10px 0 0;
   border-bottom: 0;
   color:#4D4D4D;
@@ -55,7 +55,7 @@
 .tab:target > a {
   background-color: #ffff; 
   color: #FF4700; 
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .tab:not(:target) .tab-body-content {

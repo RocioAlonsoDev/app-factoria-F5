@@ -1,19 +1,18 @@
 .navbar {
     background-color: #080132;
     color: white;
-    height: 50px; 
+    height: 75px; 
     width: 100%; 
     display: flex;
     align-items: center;
     padding-left: 20px;
     box-sizing: border-box;
 }
-
-h1 {
-    color: rgb(255, 255, 255)
-    
+.home{
+    font-size: 14pt;
+    font-weight: 100;
 }
-
 .link-decoration{
     text-decoration:none;
+    color: #fff;
 }

@@ -1,5 +1,5 @@
 import ButtonAtom from "../../components/atoms/ButtonAtom/ButtonAtom"; 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 import  './Acces.css';
 import NavbarAtom from "../../components/atoms/NavbarAtom/NavbarAtom";
@@ -8,7 +8,7 @@ import FooterAtom from "../../components/atoms/FooterAtom/FooterAtom";
 
 function Acces() {
 
-    const FORM_ENDPOINT = "http://localhost/FACTORIA 5 - APP/app-factoria-F5/back-php/API/user.php";
+    const FORM_ENDPOINT = "http://localhost/05-app-factoria-F5/back-php/API/user.php";
     const navigate = useNavigate();
     const logIn = (data) => {
         sessionStorage.setItem("UserID", data['UserID']);
@@ -22,7 +22,7 @@ function Acces() {
             .then(response=>{
                 if(response.data){
                     logIn(response.data);
-                    navigate('/UserProfilePage');
+                    navigate('/consultas');
                 }
             })
         } catch (error) {
@@ -41,7 +41,7 @@ function Acces() {
                     <input type="password" name='Password' placeholder="Contraseña" />
                     <ButtonAtom label="Acceder" color="orange"/>
                 </form>
-                <div id="inscribe-text">¿Aún no tienes cuenta? Inscribete aquí</div>
+                <div id="inscribe-text">¿Aún no tienes cuenta? <Link to='/registro'>Inscribete aquí</Link></div>
             </div>
         </main> 
         <FooterAtom></FooterAtom>

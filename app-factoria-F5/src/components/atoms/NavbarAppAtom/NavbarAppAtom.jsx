@@ -8,7 +8,6 @@ import './navbarAppAtom.css';
 import menuNavbarAppIcon from '../../../assets/icons/menu-navbar-app.svg'
 
 function NavbarAppAtom({name_greeting}) {
-
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
  
@@ -18,7 +17,7 @@ function NavbarAppAtom({name_greeting}) {
         <div className='navbar-app-icon-container' onClick={handleClick}>
             <img className="navbar-app-icon" src={menuNavbarAppIcon} alt="Icono Menú de Navegación" />
         </div>
-        <h2 className='navbar-app-greeting-text'> Hola, {name_greeting} !</h2>
+        <h2 className='navbar-app-greeting-text'> Hola, {name_greeting}!</h2>
       </nav>
 
 
@@ -32,7 +31,7 @@ function NavbarAppAtom({name_greeting}) {
             </div></Link> 
             <ul>
                 
-                <Link className="link-decoration" to='/SearchFilterPage'>
+                <Link className="link-decoration" to='/consultas'>
                     <li>
                     CONSULTAS
                     </li>

@@ -8,7 +8,7 @@ const RegistrationFormAtom = () => {
 
     const FORM_ENDPOINT = "http://localhost/05-app-factoria-F5/back-php/API/applicants.php";
     const navigate = useNavigate();
-        
+    
     const handleSubmit = (event) => {
 
         event.preventDefault();
@@ -18,7 +18,7 @@ const RegistrationFormAtom = () => {
             axios.post(FORM_ENDPOINT,new FormData(event.target))
             .then(response=>{
                 if(response.data){
-                    navigate('/success');
+                    navigate('/registro-exitoso');
                 }
             })
         } catch (error) {

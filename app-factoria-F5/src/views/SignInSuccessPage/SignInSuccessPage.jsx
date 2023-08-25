@@ -1,7 +1,7 @@
 import './signInSuccessPage.css';
 import { Link } from "react-router-dom";
 import ButtonAtom from '../../components/atoms/ButtonAtom/ButtonAtom';
-import FooterAtom from '../../components/atoms/footerAtom/FooterAtom';
+import FooterAtom from '../../components/atoms/FooterAtom/FooterAtom';
 import NavbarAtom from '../../components/atoms/NavbarAtom/NavbarAtom';
 import computer from '../../assets/img/online-resume.png';
 
@@ -18,7 +18,7 @@ export default function SignInSuccessPage(){
                         el estado de tu candidatura.
                     </p>
                 </div>
-                <Link className="link-decoration" to="/Acces"><ButtonAtom label='Acceder' color='orange'></ButtonAtom></Link>
+                <Link className="link-decoration" to="/acceso"><ButtonAtom label='Acceder' color='orange'></ButtonAtom></Link>
                 <FooterAtom logo={true}></FooterAtom> 
             </main>
             

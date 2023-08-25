@@ -4,7 +4,10 @@ import './NavbarAtom.css';
 function NavbarAtom() {
     return (
       <nav className='navbar'>
-        <Link className="link-decoration" to='/'><h1 className='text'>Inicio / <span>Inscripción</span></h1> </Link>
+        <h1 className='text'>
+          <Link className="link-decoration home" to='/'>Inicio </Link> / 
+          <Link className="link-decoration" to='/'> Inscripción </Link>
+        </h1>
       </nav>
     );
   }
